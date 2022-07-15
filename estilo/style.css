@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+    --cor1: #A83025;
+    --cor2: #5C3330;
+    --cor3: #DB3E30;
+    --cor4: #E17E75;
+    --cor5: #5C1A14;
+    
+    --cor3_t: #5c4e1894;
+    --cor4_t: #dbbb395e;
+    
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Dancing Script', cursive;
+    --fonte3: 'Kaushan Script', cursive;
+    /* --fonte4: 'Amatic SC', cursive; */
+    --fonte4: 'Courgette', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html, body {
+    background-color: var(--cor4_t);
+    font-family: var(--fonte4);
+}
+
+
+header {
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
+    background-image: linear-gradient(to bottom, var(--cor3_t), var(--cor4_t));
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 1px 1px 0px var(--cor4_t);
+}
+
+header > h1, header > p {
+    color: white;
+    text-align: center;
+    padding-right: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.541);
+    font-size: 2em;
+    font-family: var(--fonte2);
+}
+
+header > h1 {
+    font-size: 3em;
+}
+
+nav {
+    padding: 50px 10px 50px 10px;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.589);
+    font-size: 1.5em;
+}
+
+/* .escurecer > a {
+    color: var(--cor2);
+    text-shadow: 1px 1px 1px var(--cor2);
+} */
+
+/* .escurecer > a:visited {
+    color: var(--cor2);
+} */
+
+div {
+    display: inline-block;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+div > a {
+    color: white;
+    text-decoration: none;
+}
+
+
+a {
+    color: white;
+}
+
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    background-color: var(--cor4_t);
+    padding: 5px;
+    font-weight: bold;
+}
+
+main {
+    min-height: 70vh;
+    /* max-height: 75vh; */
+    background-color: #dbbb393f;
+    max-width: 500px;
+    margin: auto;
+    /* margin-top: 50px; */
+    text-align: center;
+    color: white;
+}
+
+main > h2 {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    font-size: 2em;
+}
+
+main > h3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 2em;
+}
+
+main > p {
+    padding: 20px;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.507);
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor4_t), var(--cor3_t));
+    margin-top: 20px;
+    color: white;
+    box-shadow: 1px 1px 0px var(--cor4_t);
+    padding-left: 5px;
+}
+
+footer > a {
+    text-decoration: none;
+}
+
+footer > a:hover {
+    font-weight: bold;
+    padding: 0px;
+}
